@@ -60,3 +60,9 @@ If you would like to run the Notebooks locally, please follow the following desc
      conda deactivate
      ```
 
+### Table of Contents
+***NO SETUP NEEDED*** 
+HotPotQA.ipynb is a working example based on a powerful database of English Wikipedia and executes a small question-answering-game that tests the LM's capability to retrieve information from a question and sections in the context to generate a correct response. 
+
+
+
