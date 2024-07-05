@@ -1,6 +1,10 @@
 # DSPy-Notebooks
 The task was to use DSPy in our backend of the Slide Evaluation Support System to ensure reproducibility and optimize the way we call the LLMs. This repository explores several Working Examples and tries out optimizers initially intended for other use cases on our own use case. The most valuable results are the pipelines and BootstrapFewShot. 
 
+The easiest way to run them is via Anaconda > Jupyter Notebooks or via your G-Mail Account by opening it as a Google Colab Notebook.
+
+If you would like to run the Notebooks locally, please follow the following description in a local terminal e.g. inside of Visual Studio Code.
+
 1. **Install Miniconda or Anaconda:**
    - If you haven't already installed Conda, you can download and install Miniconda or Anaconda from the official website. Miniconda is a lightweight version of Anaconda, and Anaconda comes with a lot of pre-installed packages. Choose the one that best fits your needs.
 
