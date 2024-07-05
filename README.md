@@ -62,7 +62,7 @@ If you would like to run the Notebooks locally, please follow the following desc
 
 ### Table of Contents
 ***NO SETUP NEEDED*** 
-HotPotQA.ipynb is a working example based on a powerful database of English Wikipedia and executes a small question-answering-game that tests the LM's capability to retrieve information from a question and sections in the context to generate a correct response.
+HotPotQA.ipynb is a working example based on a powerful database of English Wikipedia and executes a small question-answering-game that tests the LM's capability to retrieve information from a question and sections in the context to generate a correct response.\\
 ***OPENAI_API_KEY SETUP NEEDED***
 Min Work Ex GSM8K applied on Single Slide Feedback.ipynb applies the GSM8K optimizer on our use case by training the LLM program on positive examples.
 
