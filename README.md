@@ -7,8 +7,6 @@ The task was to use DSPy in our backend of the Slide Evaluation Support System t
 
 To our surprise, the GSM8K Examples, applied on Examples containing slide input and expected output of our Single Slide Feedback, leads to an output which is exactly how we would like the Single Slide Feedback to be. The DSPy module ChainOfThought inside of the optimizer BootstrapFewShot that is trained on an Example from the Single Slide Feedback and optimized along the pre-defined metric gsm8k_metric, leads to an output for the Single Slide Feedback, which meets our expectations. However, as we are training and developing on the same example, this is clearly an overfit. **[TO-DO: Generate more examples of the form: Example({'question': "[slide.markdown]", 'gold_reasoning': "[prompt including checkpoints]", 'answer': "[example of a great example for Single Slide Feedback Output]})] and add it to "Min Work Ex GSM8K applied on Single Slide Feedback.ipynb" so that trainset does not equal devset anymore**.
 
-Due to extremely simplifications, there is a high risk of Overfitting. A promising next step would be to generate more examples with the structure of the module Example(
-
 The easiest way to run them is via Anaconda > Jupyter Notebooks or via your G-Mail Account by opening it as a Google Colab Notebook.
 
 If you would like to run the Notebooks locally, please follow the following description in a local terminal e.g. inside of Visual Studio Code.
