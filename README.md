@@ -3,9 +3,10 @@ The task was to use DSPy in our backend of the Slide Evaluation Support System t
 
 (1) Working Examples on other tasks, e.g., HotPotQA, GSM8K, and 
 (2) defines and technically assessed a self-defined metric "completeness_check" for the procession of checkpoints in the Single Slide Feedback and 
-(3) tries out optimizers initially intended for other use cases on the output of our Single Slide Feedback.
+(3) tries out optimizers initially intended for other use cases on the output of our Single Slide Feedback
+(4) sets up a cache for generated feedback, which can be accessed and learned from. 
 
-To our surprise, the GSM8K Examples, applied on Examples containing slide input and expected output of our Single Slide Feedback, leads to an output which is exactly how we would like the Single Slide Feedback to be. The DSPy module ChainOfThought inside of the optimizer BootstrapFewShot that is trained on an Example from the Single Slide Feedback and optimized along the pre-defined metric gsm8k_metric, leads to an output for the Single Slide Feedback, which meets our expectations. However, as we are training and developing on the same example, this is clearly an overfit. **[TO-DO: Generate more examples of the form: Example({'question': "[slide.markdown]", 'gold_reasoning': "[prompt including checkpoints]", 'answer': "[example of a great example for Single Slide Feedback Output]})] and add it to "Min Work Ex GSM8K applied on Single Slide Feedback.ipynb" so that trainset does not equal devset anymore**.
+To our surprise, the GSM8K Examples, applied on Examples containing slide input and expected output of our Single Slide Feedback, leads to an output which is exactly how we would like the Single Slide Feedback to be. The DSPy module ChainOfThought inside of the optimizer BootstrapFewShot that is trained on an Example from the Single Slide Feedback and optimized along the pre-defined metric gsm8k_metric, leads to an output for the Single Slide Feedback, which meets our expectations. However, as we are training and developing on the same example, this is clearly an overfit. **TO-DO: Generate more examples of the form: Example({'question': "[slide.markdown]", 'gold_reasoning': "[prompt including checkpoints]", 'answer': "[example of a great example for Single Slide Feedback Output]}) and add it to "Min Work Ex GSM8K applied on Single Slide Feedback.ipynb" so that trainset does not equal devset anymore**.
 
 The easiest way to run them is via Anaconda > Jupyter Notebooks or via your G-Mail Account by opening it as a Google Colab Notebook.
 
